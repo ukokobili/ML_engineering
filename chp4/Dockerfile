@@ -15,8 +15,8 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 # install apps from the copied files
 RUN pipenv install --deploy --system && \ 
     rm -rf /root/.cache
-# copy python files and model from current host dir
-COPY ["*.py", "churn-model.bin", "./"] 
+
+COPY ["*.py", "churn-model.bin", "./"] # copy python files and model from current host dir
 
 # expose the port so that host pc can connect
 EXPOSE 9696

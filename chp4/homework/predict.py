@@ -10,7 +10,7 @@ def load(filename):
 
 
 dv = load('dv.bin')
-model = load('model1.bin')
+model = load('model2.bin')
 
 app = Flask('card')
 

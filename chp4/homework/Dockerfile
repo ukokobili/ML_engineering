@@ -16,7 +16,7 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 RUN pipenv install --deploy --system 
 
 # copy python files and model from current host dir
-COPY ["predict.py", "model1.bin", "dv.bin", "./"] 
+COPY ["predict.py", "./"] 
 
 # expose the port so that host pc can connect
 EXPOSE 9696

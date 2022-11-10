@@ -13,3 +13,44 @@ The best model was selected from the following:
  * Decision Tree
  * Random Forest
  * XGBoost
+
+The baseline models were built without without scaling the data applying Eensemble modeles and the best model was selected afterwards.
+
+## The metrics
+The metrics involved include Confusion Matrix And Scores Of Accuracy, Recall, Precision And F1-Score.
+
+## The Notebook 
+ * EDA.ipynb
+    * Performs an exploratory data analysis
+    * Feature importance analysis
+ * modeling.ipynb 
+    * Encodes categorical features
+    * Allows to build, select and evaluate models
+    * Performs model hyperparameter tuning
+    * Saves the selected model using BentoML
+
+## Script
+ * model.py 
+    * Loading the model
+    * Serving it via a web serice (BentoML)
+ * locustfile.py
+    * Model simulation of millions of simultaneous users
+
+## Files with dependencies
+ * bentofile.yaml
+    * Containerize the packages
+ * bentomlconfiguration.yaml
+    * For specifiying the Batch Size
+    * For specifiying the Latency Period
+
+## Deployment
+ * AWS Elastic Container Registry
+    * Store the Docker container
+ * AWS Elastic Container Service 
+    * Run the model in cloud
+
+Performs an exploratory data analysis (EDA) using the library Sweetviz
+02_Preprocessing.ipynb
+Performs some data preprocessing steps, and
+Does feature importance analysis
+03_Modeling.ipynb

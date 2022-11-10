@@ -49,8 +49,4 @@ The metrics involved include Confusion Matrix And Scores Of Accuracy, Recall, Pr
  * AWS Elastic Container Service 
     * Run the model in cloud
 
-Performs an exploratory data analysis (EDA) using the library Sweetviz
-02_Preprocessing.ipynb
-Performs some data preprocessing steps, and
-Does feature importance analysis
-03_Modeling.ipynb
+You can access the model using this API 23.20.98.64:3000
